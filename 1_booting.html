@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--<meta http-equiv="refresh" content="5; url=2_welcome.html"> !-->
+    <title>booting</title>
+</head>
+<body>
+    <style>
+        body{
+            margin: 0;
+            background-color: black;
+            display: flex;
+            height: 60vh;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        img {
+        width: 30%;
+        } 
+
+        .logo {
+          font-size: 2em;
+          margin-bottom: 10px;
+        }
+    
+        .loader {
+        width: 50px;
+        height: 50px;
+        border: 6px solid #f3f3f3;
+        border-top: 10px solid #3498db; 
+        border-radius: 50%;
+        animation: spin 1s linear infinite;
+        }
+    
+        @keyframes spin {
+            0%{
+                transform: rotate(0deg);
+            }
+          100% {
+            transform: rotate(360deg);
+          }
+        }
+    </style>
+    <img src="images/windows-11.png">
+<div class="loader"></div>
+</body>
+</html>
