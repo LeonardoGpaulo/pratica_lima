@@ -1,31 +1,66 @@
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--<meta http-equiv="refresh" content="0; url=3_welcome.html"> !-->
-    <title>login</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-image: url('images/windows11-wallpaper.jpg');
+      background-size: cover;
+      background-position: center;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      backdrop-filter: blur(15px);
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    .loginTela {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 40px;
+      border-radius: 10px;
+    }
+
+    .fotoPerfil img{
+      width: 150px;
+      border-radius: 50%;
+      margin-bottom: 20px;
+    }
+
+    .senha input {
+      padding: 10px;
+      margin: 8px 0;
+      width: 220px;
+      border: 100px;
+      border-radius: 40px;
+      font-size: 16px;
+      background-color: white;
+      text-align: center;
+    }
+
+  </style>
 </head>
 <body>
-    <style>
-        body{
-            background-image: url('images/windows11-wallpaper.jpg');
-            background-size: cover; 
-            background-position: center;  
-            height: 100vh;     
-                   
-        }   
-        nav{text-align: center;
-            flex-direction: column;
-            margin-top: 200px;
 
-        }
-            </style>
-<nav>
-    
-    <h2>Login</h2>
-    <input type="text" placeholder="Usuário" name="usuario" style="padding: 10px; margin: 10px 0; width: 200px;"><br>
-    <input type="password" placeholder="Senha" name="senha" style="padding: 10px; margin: 10px 0; width: 200px;"><br>
-    <button type="submit" style="padding: 10px 20px; margin-top: 10px;">Entrar</button>
-</form>
-</nav>
+  <div class="loginTela">
+    <div class="fotoPerfil">
+      <img src="https://cdn-icons-png.flaticon.com/512/9706/9706583.png" alt="Perfil">
+    </div>
+    <form class="senha">
+      <input type="password" placeholder="Senha" name="senha" required>
+    </form>
+  </div>
+</body>
+
+</html>
